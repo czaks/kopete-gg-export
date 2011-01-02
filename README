@@ -1,0 +1,29 @@
+kopete-gg-export - a Kopete to standard (text) Gadu-Gadu list
+^^^^^^^^^^^^^^^^      format converter
+
+Kopete, by default, provides a faulty method of exporting Gadu-Gadu
+contact list, namely, you don't see the correct display names when
+using metacontacts. If it's your concern, you can use my quick and
+dirty script to extract them in the correct way.
+
+License: MIT (X11)
+
+Prerequisites (may also work in older versions):
+    * Ruby 1.8 or higher
+    * hpricot 0.8.3
+    * iconv binary (on GNU/Linux platforms available in the
+
+How to run:
+    To extract contact list in windows-1250 charset:
+        ruby kopete-gg-export.rb |
+        iconv -futf-8 -tcp1250//TRANSLIT > list.txt
+        
+    To extract contact list in utf-8 charset:
+        ruby kopete-gg-export.rb > list.txt
+    
+Known bugs / limitations:
+    * The software is poorly tested.
+    * It doesn't support groups, as well as some other custom fields
+      but it should be trivial to implement them.
+    * It doesn't support the blocked list.
+    
