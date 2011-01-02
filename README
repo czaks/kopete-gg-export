@@ -1,5 +1,5 @@
-kopete-gg-export - a Kopete to standard (text) Gadu-Gadu list
-^^^^^^^^^^^^^^^^      format converter
+kopete-gg-export - a Kopete to standard (text) Gadu-Gadu contact
+^^^^^^^^^^^^^^^^      list format converter
 
 Kopete, by default, provides a faulty method of exporting Gadu-Gadu
 contact list, namely, you don't see the correct display names when
